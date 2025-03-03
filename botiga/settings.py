@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'catalog.apps.CatalogConfig',
     'payment.apps.PaymentConfig'
+    'cart',
+    'orders'
 ]
 
 MIDDLEWARE = [
@@ -79,14 +81,14 @@ WSGI_APPLICATION = 'botiga.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'botiga',
-        'USER': 'postgres',
+        'NAME': 'botiga',  
+        'USER': 'postgres',   
         'PASSWORD': 'admin',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': 'localhost',     
+        'PORT': '5432',        
+
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
