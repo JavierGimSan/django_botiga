@@ -8,3 +8,5 @@ class Product(models.Model):
     categoria = models.CharField(max_length=100)
     imatge = models.CharField(max_length=500)
 
+    def __str__(self):
+        return self.nom
